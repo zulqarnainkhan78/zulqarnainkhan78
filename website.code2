@@ -1,0 +1,160 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
+#include <ctime>
+#include <cstdlib>
+#include <cstring>
+#include <cctype>
+#include <cstdio>
+#include <cstddef>
+#include <climits>
+#include <cfloat>
+#include <limits>
+#include <exception>
+#include <stdexcept>
+#include <typeinfo>
+#include <memory>
+#include <functional>
+#include <utility>
+#include <bitset>
+#include <complex>
+#include <valarray>
+#include <random>
+#include <numeric>
+#include <ratio>
+#include <chrono>
+#include <locale>
+#include <codecvt>
+#include <thread>
+#include <mutex>
+#include <condition_variable>
+#include <atomic>
+#include <future>
+#include <queue>
+#include <stack>
+#include <list>
+#include <forward_list>
+#include <deque>
+#include <array>
+#include <tuple>
+#include <unordered_set>
+#include <unordered_map>
+#include <map>
+#include <set>
+#include <iterator>
+#include <algorithm>
+#include <functional>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
+#include <ctime>
+#include <cstdlib>
+#include <cstring>
+#include <cctype>
+#include <cstdio>
+#include <cstddef>
+#include <climits>
+#include <cfloat>
+#include <limits>
+#include <exception>
+#include <stdexcept>
+#include <typeinfo>
+#include <memory>
+#include <functional>
+#include <utility>
+#include <bitset>
+#include <complex>
+#include <valarray>
+#include <random>
+#include <numeric>
+#include <ratio>
+#include <chrono>
+#include <locale>
+#include <codecvt>
+#include <thread>
+#include <mutex>
+#include <condition_variable>
+#include <atomic>
+#include <future>
+#include <queue>
+#include <stack>
+#include <list>
+#include <forward_list>
+#include <deque>
+#include <array>
+#include <tuple>
+#include <unordered_set>
+#include <unordered_map>
+#include <map>
+#include <set>
+#include <iterator>
+#include <algorithm>
+#include <functional>
+
+int main() {
+    // HTML structure
+    std::cout << "<!DOCTYPE html>" << std::endl;
+    std::cout << "<html lang=\"en\">" << std::endl;
+    std::cout << "<head>" << std::endl;
+    std::cout << "    <meta charset=\"UTF-8\">" << std::endl;
+    std::cout << "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" << std::endl;
+    std::cout << "    <title>Cars Showroom</title>" << std::endl;
+    std::cout << "    <style>" << std::endl;
+    std::cout << "        /* Add your CSS styles here */" << std::endl;
+    std::cout << "    </style>" << std::endl;
+    std::cout << "</head>" << std::endl;
+    std::cout << "<body>" << std::endl;
+    std::cout << "    <header>" << std::endl;
+    std::cout << "        <h1>Welcome to our Cars Showroom</h1>" << std::endl;
+    std::cout << "        <nav>" << std::endl;
+    std::cout << "            <ul>" << std::endl;
+    std::cout << "                <li><a href=\"#about\">About</a></li>" << std::endl;
+    std::cout << "                <li><a href=\"#cars\">Cars</a></li>" << std::endl;
+    std::cout << "                <li><a href=\"#contact\">Contact</a></li>" << std::endl;
+    std::cout << "            </ul>" << std::endl;
+    std::cout << "        </nav>" << std::endl;
+    std::cout << "    </header>" << std::endl;
+    std::cout << "    <main>" << std::endl;
+    std::cout << "        <section id=\"about\">" << std::endl;
+    std::cout << "            <h2>About Our Showroom</h2>" << std::endl;
+    std::cout << "            <p>We are a leading car showroom dedicated to providing our customers with the best selection of vehicles and exceptional service.</p>" << std::endl;
+    std::cout << "        </section>" << std::endl;
+    std::cout << "        <section id=\"cars\">" << std::endl;
+    std::cout << "            <h2>Our Cars</h2>" << std::endl;
+    std::cout << "            <div class=\"car-container\">" << std::endl;
+    std::cout << "                <!-- Add your car listings here -->" << std::endl;
+    std::cout << "            </div>" << std::endl;
+    std::cout << "        </section>" << std::endl;
+    std::cout << "        <section id=\"contact\">" << std::endl;
+    std::cout << "            <h2>Contact Us</h2>" << std::endl;
+    std::cout << "            <form>" << std::endl;
+    std::cout << "                <label for=\"name\">Name:</label>" << std::endl;
+    std::cout << "                <input type=\"text\" id=\"name\" name=\"name\" required>" << std::endl;
+    std::cout << "                <label for=\"email\">Email:</label>" << std::endl;
+    std::cout << "                <input type=\"email\" id=\"email\" name=\"email\" required>" << std::endl;
+    std::cout << "                <label for=\"message\">Message:</label>" << std::endl;
+    std::cout << "                <textarea id=\"message\" name=\"message\" required></textarea>" << std::endl;
+    std::cout << "                <button type=\"submit\">Send</button>" << std::endl;
+    std::cout << "            </form>" << std::endl;
+    std::cout << "        </section>" << std::endl;
+    std::cout << "    </main>" << std::endl;
+    std::cout << "    <footer>" << std::endl;
+    std::cout << "        <p>&copy; 2023 Cars Showroom. All rights reserved.</p>" << std::endl;
+    std::cout << "    </footer>" << std::endl;
+    std::cout << "    <script>" << std::endl;
+    std::cout << "        // Add your JavaScript code here" << std::endl;
+    std::cout << "    </script>" << std::endl;
+    std::cout << "</body>" << std::endl;
+    std::cout << "</html>" << std::endl;
+
+    return 0;
+}

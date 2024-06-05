@@ -1,0 +1,31 @@
+import os
+from flask import Flask, render_template, url_for
+from PIL import Image
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    # Load car images
+    car_images = os.listdir('static/images/cars')
+    car_images = ['images/cars/' + img for img in car_images]
+
+    # Load showroom images
+    showroom_images = os.listdir('static/images/showroom')
+    showroom_images = ['images/showroom/' + img for img in showroom_images]
+
+    # Get image dimensions
+    car_dimensions = []
+    for img in car_images:
+        image = Image.open('static/' + img)
+        car_dimensions.append(image.size)
+
+    showroom_dimensions = []
+    for img in showroom_images:
+        image = Image.open('static/' + img)
+        showroom_dimensions.append(image.size)
+
+    return render_template('index.html', car_images=car_images, showroom_images=showroom_images, car_dimensions=car_dimensions, showroom_dimensions=showroom_dimensions)
+
+if __name__ == '__main__':
+    app.run(debug=True)

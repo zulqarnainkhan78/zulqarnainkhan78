@@ -1,0 +1,9 @@
+/office_website
+    /static
+        /css
+            styles.css
+        /js
+            script.js
+    /templates
+        index.html
+    app.py

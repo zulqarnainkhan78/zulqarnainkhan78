@@ -1,0 +1,72 @@
+import java.util.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class CarsShowroom extends JFrame {
+    private JPanel mainPanel, headerPanel, contentPanel, footerPanel;
+    private JLabel titleLabel, descriptionLabel;
+    private JButton viewCarsButton, contactUsButton;
+    private JList<String> carsList;
+    private JScrollPane carsListScrollPane;
+    private String[] carModels = {"Toyota Camry", "Honda Civic", "Ford Mustang", "Chevrolet Corvette", "BMW 3 Series", "Mercedes-Benz C-Class"};
+
+    public CarsShowroom() {
+        setTitle("Cars Showroom");
+        setSize(800, 600);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        // Create main panel
+        mainPanel = new JPanel(new BorderLayout());
+        mainPanel.setBackground(Color.WHITE);
+
+        // Create header panel
+        headerPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 20));
+        headerPanel.setBackground(new Color(0, 0, 128));
+        titleLabel = new JLabel("Welcome to Our Cars Showroom");
+        titleLabel.setForeground(Color.WHITE);
+        titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
+        headerPanel.add(titleLabel);
+        mainPanel.add(headerPanel, BorderLayout.NORTH);
+
+        // Create content panel
+        contentPanel = new JPanel(new GridLayout(2, 1, 20, 20));
+        contentPanel.setBackground(Color.WHITE);
+        descriptionLabel = new JLabel("Browse our selection of the latest car models:");
+        descriptionLabel.setFont(new Font("Arial", Font.PLAIN, 16));
+        contentPanel.add(descriptionLabel);
+
+        carsList = new JList<>(carModels);
+        carsList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        carsList.setFont(new Font("Arial", Font.PLAIN, 14));
+        carsListScrollPane = new JScrollPane(carsList);
+        contentPanel.add(carsListScrollPane);
+        mainPanel.add(contentPanel, BorderLayout.CENTER);
+
+        // Create footer panel
+        footerPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 20));
+        footerPanel.setBackground(new Color(0, 0, 128));
+        viewCarsButton = new JButton("View Cars");
+        viewCarsButton.setFont(new Font("Arial", Font.BOLD, 16));
+        viewCarsButton.setForeground(Color.WHITE);
+        viewCarsButton.setBackground(new Color(0, 0, 128));
+        footerPanel.add(viewCarsButton);
+        contactUsButton = new JButton("Contact Us");
+        contactUsButton.setFont(new Font("Arial", Font.BOLD, 16));
+        contactUsButton.setForeground(Color.WHITE);
+        contactUsButton.setBackground(new Color(0, 0, 128));
+        footerPanel.add(contactUsButton);
+        mainPanel.add(footerPanel, BorderLayout.SOUTH);
+
+        add(mainPanel);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new CarsShowroom().setVisible(true);
+            }
+        });
+    }
+}

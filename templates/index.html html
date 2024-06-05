@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Space</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Office Space</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="parallax">
+        <div class="content">
+            <h2>Welcome to Our Office</h2>
+            <p>Creating a productive and inspiring work environment.</p>
+        </div>
+    </section>
+    <section id="about" class="parallax">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>We provide modern office spaces designed for success.</p>
+        </div>
+    </section>
+    <section id="services">
+        <div class="content">
+            <h2>Our Services</h2>
+            <p>From coworking spaces to private offices, we have it all.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Get in touch to find out more about our offerings.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Office Space. All rights reserved.</p>
+    </footer>
+</body>
+</html>
